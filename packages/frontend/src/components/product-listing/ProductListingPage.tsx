@@ -1,6 +1,7 @@
 import { useAppDispatch, useAppSelector } from '../../services/store';
 import { useEffect } from 'react';
 import { productListingSlice } from './store';
+import { Header } from '../Header';
 
 export const ProductListingPage = () => {
   const dispatch = useAppDispatch();
@@ -10,5 +11,11 @@ export const ProductListingPage = () => {
     dispatch(productListingSlice.actions.productsLoaded());
   }, []);
 
-  return <> {request.pending ? 'Loading ...' : request?.products?.test} </>;
+  return (
+    <div>
+        <Header></Header>
+        <h1>LISTA RESTAURACJI</h1>
+        <> {request.pending ? 'Loading ...' : request?.products?.test} </>;
+    </div>
+  )
 };
