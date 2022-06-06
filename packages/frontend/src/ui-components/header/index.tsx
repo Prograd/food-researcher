@@ -8,10 +8,6 @@ const headersData = [
     label: 'Dodaj lokal',
     href: '/addRestaurant',
   },
-  {
-    label: 'Edytuj lokal',
-    href: '/editRestaurant',
-  },
 ];
 
 const useStyles = makeStyles(() => ({
@@ -69,7 +65,7 @@ export const Header = () => {
   };
 
   return (
-    <header>
+    <header style={{ marginBottom: '15px' }}>
       <AppBar className={header}>
         <Toolbar className={toolbar}>
           {foodResearcherLogo}
