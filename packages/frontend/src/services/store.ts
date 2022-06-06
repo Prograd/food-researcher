@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import createSagaMiddleware from 'redux-saga';
-import { productListingSlice, productsSaga } from '../features/product-listing/store';
+import { productListingSlice, productsSaga } from '../components/product-listing/store';
 
 export const createStore = () => {
   const saga = createSagaMiddleware();

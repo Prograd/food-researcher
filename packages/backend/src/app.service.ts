@@ -5,7 +5,14 @@ import { Hello } from './backend.types';
 export class AppService {
   getHello(): Hello {
     return {
-      test: 'test',
+      nameRestaurant: 'Tapasta',
+      typeRestaurant: 'Włoska',
+      city: 'Poznań',
+      street: 'kwiatowa',
+      apartmentNumber: 3,
+      numberOfSeats: 20,
+      cardPayments: true,
+      description: "Studencka zniżka 20% od poniedziałku do środy"
     };
   }
 }
